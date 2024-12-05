@@ -126,12 +126,11 @@ export function renderPage(
       <body data-slug={slug}>
         <div class="marquee">
           <p>
-            the tactic toolbox • the scheme suite • the manuever manual • the blueprint bundle • the
-            playbook pack • the approach arsenal • the strategy suitcase • the resource repository • 
-            the tactic toolbox • the scheme suite • the manuever manual • the blueprint bundle • the
-            playbook pack • the approach arsenal • the strategy suitcase • the resource repository • 
-            the tactic toolbox • the scheme suite • the manuever manual • the blueprint bundle • the
-            playbook pack • the approach arsenal • the strategy suitcase • the resource repository
+            microgrants for builders • funding ambitious projects • builder community support • 
+            startup resources & tools • merge club network • founder community • project funding • 
+            microgrants for builders • funding ambitious projects • builder community support • 
+            startup resources & tools • merge club network • founder community • project funding • 
+            microgrants for builders • funding ambitious projects • builder community support
           </p>
         </div>
         {slug === "index" && <LandingComponent {...componentData} />}
