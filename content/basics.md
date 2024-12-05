@@ -1,17 +1,10 @@
 ---
-title: Merge Grant
+title: Merge Club
 issueNo: 1
 ---
 
-<div class="article-header">
 
-# What is Merge?
 
-Written by Ari 
-
-</div>
-
-# Merge Grant
 
 **We provide a small amount of money and a large amount of encouragement.**
 

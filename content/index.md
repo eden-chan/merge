@@ -1,3 +1,3 @@
 ---
-title: Welcome to Socratica
+title: Merge Club - Microgrant recipients working on big ideas
 ---

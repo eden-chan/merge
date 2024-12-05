@@ -163,6 +163,7 @@ export function renderPage(
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")
         .map((res) => JSResourceToScriptElement(res))}
+        {slug === "index" && <Footer {...componentData} />}
     </html>
   )
 
