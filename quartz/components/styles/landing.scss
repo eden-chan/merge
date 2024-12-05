@@ -56,17 +56,19 @@
 /* ISSUE CARDS */
 .issue-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 36px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .card {
   background-color: white;
   border: 2px solid #00000015;
   border-radius: 8px;
-  aspect-ratio: 8.5 / 11;
-  padding: 12px;
+  aspect-ratio: 16 / 9;
+  padding: 24px;
   position: relative;
   transition: transform 0.3s;
   overflow: hidden;
@@ -82,10 +84,10 @@
 
 .card-title {
   font-family: "Tiempos", sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   margin: 0 0 8px 0;
   line-height: normal;
-  color: white;
+  color: #333;
 }
 
 .card-subhead {
@@ -93,7 +95,7 @@
   text-transform: uppercase;
   font-family: monospace;
   margin-top: 0;
-  color: white;
+  color: #666;
 }
 
 .card img {
@@ -114,90 +116,38 @@
 }
 
 /* CARD COLORS */
-
 .card-coming {
   background: #cfccc4;
+  
+  .card-title,
+  .card-subhead {
+    color: white;
+  }
 }
 
 .card-1 {
-  background: #649aea;
+  background: white;
   background-image: url("./static/1-noise.png");
   background-size: cover;
   overflow: visible;
 }
 
-.card-illustration-1 {
-  position: absolute;
-  bottom: 0;
-  left: -15px;
-  width: 70%;
-}
-
 .card-2 {
-  background: #aab172;
+  background: white;
   background-image: url("./static/2-noise.png");
   background-size: cover;
 }
 
-.card-illustration-2 {
-  position: absolute;
-  width: 50%;
-  bottom: 20px;
-  left: 40px;
-}
-
 .card-3 {
-  background: #bf7d1a;
+  background: white;
   background-image: url("./static/3-noise.png");
   background-size: cover;
 }
 
-.card-illustration-3 {
-  position: absolute;
-  width: 50%;
-  bottom: -40px;
-  left: 30%;
-}
-
 .card-4 {
-  background: #ad7e95;
+  background: white;
   background-image: url("./static/4-noise.png");
   background-size: cover;
-}
-
-.card-illustration-4 {
-  position: absolute;
-  width: 50%;
-  bottom: 0;
-  right: -10px;
-}
-
-.card-5 {
-  background: #eb856f;
-  background-image: url("./static/5-noise.png");
-  background-size: cover;
-  overflow: visible;
-}
-
-.card-illustration-5 {
-  position: absolute;
-  width: 80%;
-  bottom: 0;
-  right: -10px;
-}
-
-.card-6 {
-  background: #e18fa7;
-  background-image: url("./static/6-noise.png");
-  background-size: cover;
-  overflow: visible;
-}
-
-.card-illustration-6 {
-  position: absolute;
-  width: 80%;
-  bottom: 0;
-  right: -10px;
 }
 
 /* ANIMATIONS */
@@ -225,58 +175,21 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .header-card {
-    width: 300px;
-  }
-
-  .content-container {
-    width: 95%;
-    margin: 0 auto;
-  }
-
+@media screen and (max-width: 1024px) {
   .issue-container {
-    display: grid;
+    max-width: 800px;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .issue-container {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 24px;
   }
 
   .card {
-    aspect-ratio: 10 / 2;
-    overflow: hidden;
-  }
-
-  // loop through all cards
-  $num-cards: 7;
-
-  @for $i from 1 through $num-cards {
-    .card-illustration-#{$i} {
-      width: 25%;
-    }
-  }
-
-  .card-illustration-1 {
-    left: unset;
-    right: 60px;
-  }
-  .card-illustration-2 {
-    left: unset;
-    right: 40px;
-  }
-  .card-illustration-3 {
-    left: unset;
-    top: 15px;
-    right: 100px;
-  }
-  .card-illustration-4 {
-    left: unset;
-    top: 15px;
-    right: 60px;
-  }
-  .card-illustration-6 {
-    left: unset;
-    right: 20px;
-    top: 20px;
+    aspect-ratio: 16 / 6;
   }
 }
 
@@ -287,12 +200,12 @@
 }
 
 .white-text {
-  color: white !important;
+  color: #333 !important;
   text-decoration: none;
   transition: color 0.2s ease;
   
   &:hover {
-    color: #333333 !important;
+    color: #649aea !important;
     text-decoration: none;
   }
 }
@@ -341,5 +254,17 @@
   
   .mission-content {
     font-size: 16px;
+  }
+}
+
+.simple-card {
+  padding: 16px;  // reduced padding
+  aspect-ratio: 16 / 4;  // much shorter height
+  display: flex;
+  align-items: center;  // center title vertically
+  
+  .card-title {
+    font-size: 24px;  // slightly smaller title
+    margin: 0;  // remove margin since it's the only element
   }
 }

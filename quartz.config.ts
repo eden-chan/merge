@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Merge",
+    pageTitle: "Merge Club",
     enableSPA: true,
     enablePopovers: true,
     analytics: {

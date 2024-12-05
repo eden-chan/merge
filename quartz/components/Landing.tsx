@@ -1,64 +1,9 @@
 import { QuartzComponentConstructor } from "./types"
 import landingStyle from "./styles/landing.scss"
+import { Card } from "./Card"
+import { cardsData } from "./data/cards"
 
 export const TOTAL_CARDS = 4
-export const CARDS = {
-  basics: (
-    <a href={"/basics"} style={{ display: 'contents' }}>
-      <div class="card card-1">
-        <p class="card-title">General Grants</p>
-        <p class="card-subhead">$100-$50k</p>
-        <ul class="unstyled-list">
-          <li><a href="https://merge.club/program/emergentventures" class="white-text">Emergent Ventures ($1k-$50k)</a></li>
-          <li><a href="https://merge.club/program/1517fund" class="white-text">1517 Fund's Medici Project ($1k)</a></li>
-          <li><a href="https://merge.club/program/mergegrant" class="white-text">Merge Grant ($100-$999)</a></li>
-          <li><a href="https://merge.club/program/formidablefund" class="white-text">Formidable Fund ($1000)</a></li>
-          <li><a href="https://merge.club/program/bagelfund" class="white-text">Bagel Fund ($100-$500)</a></li>
-        </ul>
-      </div>
-    </a>
-  ),
-  "fellowships": (
-    <a href={"/fellowships"} style={{ display: 'contents' }}>
-      <div class="card card-2">
-        <p class="card-title">Fellowship Programs</p>
-        <p class="card-subhead">$10k-$100k</p>
-        <ul class="unstyled-list">
-          <li><a href="https://merge.club/program/zfellows" class="white-text">ZFellows ($10k)</a></li>
-          <li><a href="https://merge.club/program/osv" class="white-text">OSV ($100k)</a></li>
-          <li><a href="https://merge.club/program/776" class="white-text">776 Foundation ($100k)</a></li>
-          <li><a href="https://merge.club/program/nontrivial" class="white-text">Non-Trivial ($15k-$30k)</a></li>
-        </ul>
-      </div>
-    </a>
-  ),
-  "sector-grants": (
-    <a href={"/sector-grants"} style={{ display: 'contents' }}>
-      <div class="card card-3">
-        <p class="card-title">Sector/Geo Grants</p>
-        <p class="card-subhead">Specialized Programs</p>
-        <ul class="unstyled-list">
-          <li><a href="https://merge.club/program/solana" class="white-text">Solana Grants ($2k-$10k)</a></li>
-          <li><a href="https://merge.club/program/protostars" class="white-text">Protostars ($1k)</a></li>
-          <li><a href="https://merge.club/program/535fund" class="white-text">535 Fund ($100-$500)</a></li>
-        </ul>
-      </div>
-    </a>
-  ),
-  "resources": (
-    <a href={"/resources"} style={{ display: 'contents' }}>
-      <div class="card card-4">
-        <p class="card-title">Resources</p>
-        <p class="card-subhead">Helpful Links</p>
-        <ul class="unstyled-list">
-          <li><a href="https://docs.google.com/spreadsheets/d/1JTNfDeRXZKR5hEF3WYIBpi2Wu8QAeghFwJvJ53DrJWo/edit#gid=0" class="white-text">1517 Fund's Grant Database</a></li>
-          <li><a href="https://airtable.com/appHaOk5VRk50CpcF/pagCmtU8o3Zgl5Lzs/form" class="white-text">Merge's LFG Form</a></li>
-          <li><a href="https://open.spotify.com/show/5WQQ5YvTnhDYUQcPc2TOsY" class="white-text">Merge Podcast</a></li>
-        </ul>
-      </div>
-    </a>
-  ),
-}
 
 export default (() => {
   function LandingComponent() {
@@ -77,11 +22,20 @@ export default (() => {
 
         <div class="content-container">
           <div class="issue-container">
-            {Object.values(CARDS)}
-            {Array(TOTAL_CARDS - Object.keys(CARDS).length)
+            {Object.entries(cardsData).map(([key, data], index) => (
+              <Card
+                key={key}
+                title={data.title}
+                subhead={data.subhead}
+                links={data.links}
+                cardNumber={index + 1}
+                href={data.href}
+              />
+            ))}
+            {Array(TOTAL_CARDS - Object.keys(cardsData).length)
               .fill(0)
-              .map(() => (
-                <div class="card card-coming">
+              .map((_, i) => (
+                <div key={`coming-${i}`} class="card card-coming">
                   <p class="card-title">Coming Soon</p>
                   <p class="card-subhead">Issue XXX</p>
                 </div>
@@ -94,15 +48,9 @@ export default (() => {
               <p>The Microgrant Guide addresses the first two challenges. It helps you discover and apply to programs offering non-dilutive funding by raising awareness of alternative opportunities and providing a centralized hub for all microgrant and non-dilutive capital information.</p>
             </div>
           </div>
-        </div>
+        </div>   
 
-        <div class="footer-links">
-          <a href="https://www.merge.club/guide" target="_blank">Back to main site</a>
-          {" • "}
-          <a href="https://github.com/Socratica-Org/toolbox" target="_blank">Contribute</a>
-          {" • "}
-          <a href="https://toolbox.socratica.info/credits" target="_self">Credits</a>
-        </div>
+       
       </div>
     )
   }
