@@ -256,3 +256,15 @@
     font-size: 16px;
   }
 }
+
+.simple-card {
+  padding: 16px;  // reduced padding
+  aspect-ratio: 16 / 4;  // much shorter height
+  display: flex;
+  align-items: center;  // center title vertically
+  
+  .card-title {
+    font-size: 24px;  // slightly smaller title
+    margin: 0;  // remove margin since it's the only element
+  }
+}
