@@ -11,7 +11,7 @@ function PageTitle({ fileData, cfg, displayClass }: QuartzComponentProps) {
     <h1 class={`page-title ${displayClass ?? ""}`}>
       <a href={baseDir}>{title}</a>
       <div class="header-card desktop-only">
-        <Card title={card?.title} cardNumber={1} href={baseDir} subhead={card?.subhead} />
+        <Card title={card?.title} cardNumber={1} href={baseDir} subhead={title} />
       </div>
     </h1>
   )

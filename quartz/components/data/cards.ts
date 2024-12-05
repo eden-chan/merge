@@ -1,8 +1,8 @@
 export const cardsData = {
-  basics: {
+  "general-grants": {
     title: "General Grants",
     subhead: "$100-$50k",
-    href: "/basics",
+    href: "/general-grants",
     links: [
       {
         url: "https://merge.club/program/emergentventures",
