@@ -94,14 +94,52 @@ export default (() => {
               <p>The Microgrant Guide addresses the first two challenges. It helps you discover and apply to programs offering non-dilutive funding by raising awareness of alternative opportunities and providing a centralized hub for all microgrant and non-dilutive capital information.</p>
             </div>
           </div>
-        </div>
+        </div>   
 
-        <div class="footer-links">
-          <a href="https://www.merge.club/guide" target="_blank">Back to main site</a>
-          {" • "}
-          <a href="https://github.com/Socratica-Org/toolbox" target="_blank">Contribute</a>
-          {" • "}
-          <a href="https://toolbox.socratica.info/credits" target="_self">Credits</a>
+        <div class="footer-section-wrapper">
+          <div class="footer-grid">
+            <div class="footer-brand-column">
+              <div class="footer-brand">
+                <img 
+                  src="https://merge.club/pics/Slope Logo Design favicon (3).png"
+                  alt="Merge Club Logo"
+                  class="footer-logo"
+                />
+                <h3 class="footer-brand-name">Merge Club</h3>
+                <p class="footer-location">San Francisco, USA</p>
+              </div>
+              
+            
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-heading">Community</h3>
+              <ul>
+                <li><a href="https://joinodf.com/">ODF</a></li>
+                <li><a href="https://builderswho.run/">Builders Who Run</a></li>
+                <li><a href="https://landing.club/">Landing Club</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-heading">Resources</h3>
+              <ul>
+                <li><a href="https://merge.club/guide">Microgrant Guide</a></li>
+                <li><a href="https://youtube.com/@mergedotclub/">Podcast</a></li>
+                <li><a href="https://mergeclub.substack.com/">Newsletter</a></li>
+                <li><a href="https://airtable.com/appHaOk5VRk50CpcF/pagLXf1OzDFSnyykG/form">Looking For Grants</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-heading">Get involved</h3>
+              <ul>
+                <li><a href="https://airtable.com/appHaOk5VRk50CpcF/pagCmtU8o3Zgl5Lzs/form">Apply to Merge</a></li>
+                <li><a href="mailto:aridutilh@beondeck.com?subject=I%20want%20to%20start%20a%20microgrant%20program">Start your own microgrant</a></li>
+                <li><a href="https://airtable.com/appHaOk5VRk50CpcF/pagLXf1OzDFSnyykG/form">Looking for Grants</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     )

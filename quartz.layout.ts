@@ -5,13 +5,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  footer: Component.Footer({
-    links: {
-      Socratica: "https://www.socratica.info/",
-      "Attend a Session": "https://www.socratica.info/map",
-      GitHub: "https://github.com/Socratica-Org/toolbox",
-    },
-  }),
+  footer: Component.Footer(),
 }
 
 // components for pages that display a single page (e.g. a single note)
