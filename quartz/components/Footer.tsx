@@ -62,11 +62,77 @@ export default (() => {
         
         <div class="footer-socials-wrapper">
           <div class="footer-socials">
-            <a href="https://x.com/mergedotclub" target="_blank" rel="noopener noreferrer" class="social-link">
-              <img src="/static/x-logo.png" alt="X (Twitter)" class="social-icon" />
+            <a 
+              href="https://x.com/mergedotclub" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-link"
+              aria-label="Follow us on X (Twitter)"
+              data-platform="twitter"
+              itemProp="sameAs"
+            >
+              <img 
+                src="/static/x-logo.png" 
+                alt="X (Twitter)" 
+                class="social-icon"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
             </a>
-            <a href="https://www.linkedin.com/company/merge-club" target="_blank" rel="noopener noreferrer" class="social-link">
-              <img src="/static/linkedin-logo.png" alt="LinkedIn" class="social-icon" />
+            <a 
+              href="https://www.linkedin.com/company/merge-club" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-link"
+              aria-label="Connect with us on LinkedIn"
+              data-platform="linkedin"
+              itemProp="sameAs"
+            >
+              <img 
+                src="/static/linkedin-logo.png" 
+                alt="LinkedIn" 
+                class="social-icon"
+                width="20" 
+                height="20"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://discord.gg/SSD4aHgd"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="Join our Discord"
+              data-platform="discord"
+              itemProp="sameAs"
+            >
+              <img
+                src="/static/discord-logo.png"
+                alt="Discord"
+                class="social-icon"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://github.com/on-deck/merge"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="Follow us on GitHub"
+              data-platform="github"
+              itemProp="sameAs"
+            >
+              <img
+                src="/static/github-logo.png"
+                alt="GitHub"
+                class="social-icon"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
             </a>
           </div>
         </div>
