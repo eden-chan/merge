@@ -1,5 +1,5 @@
 ---
-title: 1517 Fund Medici Grant Program
+title: 1517 Fund Medici Grant Program Guide
 issueNo: 2
 ---
 
@@ -7,7 +7,12 @@ issueNo: 2
 
 ## Quick Facts
 
-**Type**: Non-dilutive microgrant ($1,000)**Eligibility**: Young builders, high school and university students preferred**Process**: Rolling applications**Contact**: [danielle@1517fund.com](mailto:danielle@1517fund.com)
+| |  |
+| --- | --- |
+| Type | Non-dilutive microgrant ($1,000) |
+| Eligibility | Young builders, high school and university students preferred |
+| Process | Rolling applications |
+| Contact | [danielle@1517fund.com](mailto:danielle@1517fund.com) |
 
 ## Mission
 

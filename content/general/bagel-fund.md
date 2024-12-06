@@ -1,24 +1,21 @@
 ---
-title: Bagel Fund
+title: Bagel Fund Program Guide
 issueNo: 4
 ---
-# Bagel Fund
 
 [Apply](https://bagel.fund/) [Contribute](https://vgiqbvp4fct.typeform.com/to/yD5aKJZ8)
 
-## 1\. Basic Program Information
+## Quick Facts
 
-- **Program Name**: Bagel Fund
-- **Grant Type**: 100% Non-Dilutive Microgrants
-- **Funding Range**: $100-$500
-- **Process**: Application + 15m interview
-- **Eligibility**: Young builders (typically 14-18 years old)
-- **Contact**:
+| | |
+|---|---|
+| Grant Type | 100% Non-Dilutive Microgrants |
+| Grant Amount | \$100-\$500 |
+| Eligibility | Young builders (typically 14-18 years old) |
+| Process | Application + 15m interview |
+| Contact | [aridutilh@beondeck.com](mailto:aridutilh@beondeck.com)<br/>[alexa@kayman.ventures](mailto:alexa@kayman.ventures) (Model Grant Application questions) |
 
-  - [aridutilh@beondeck.com](mailto:aridutilh@beondeck.com)
-  - [alexa@kayman.ventures](mailto:alexa@kayman.ventures) for questions on Model Grant Application
-
-## 2\. Program Overview
+## Program Overview
 
 What is Bagel Fund? We're a friend group working in tech that wants to support young people working on cool ideas.
 
@@ -38,7 +35,7 @@ We give microgrants ($100-500) to ambitious young builders.
 
 Working on something cool and need some non-dilutive ideation capital? Fill out this short [form](https://airtable.com/apppHgxMD5RiaGBXT/pagbMa5Y4OIVsL3nM/form). We'll get back to you via email if it's a good fit.
 
-## 3\. Success Stories
+##  Success Stories
 
 To date, we've funded:
 
@@ -62,7 +59,7 @@ To date, we've funded:
 - [Arielle](https://x.com/ariellelok/status/1795874524237332913), 20, working on Apple Tree cloning
 - [Winston](https://twitter.com/WinstonIsk), 17, increasing AI literacy for students K-12
 
-## 4\. Our Team
+##  Our Team
 
 Bagel Fund was founded by:
 
@@ -79,7 +76,7 @@ Bagel Fund was founded by:
 - [Robert Westbury](https://twitter.com/roberttwestbury)
 - [Tejas Ravishankar](https://twitter.com/suptejas)
 
-## 5\. Application Guide
+##  Application Guide
 
 **Tell us about a project you led. What was your biggest mistake & what did you learn from it?**\*
 
@@ -103,7 +100,7 @@ Think about what specific goals or benchmarks the funds should get you to.
 
 We love funding builders who are working on projects simply because they want to learn and make an impact while doing so. Oftentimes, Bagel Fund is the first grant our applicants have ever applied for. With anything, googling "best practices for X" can get you really far. But to make things easier, check out our [Model Grant Application](https://ak-columbia.notion.site/Bagel-Fund-Model-Grant-Application-10e0cfd9eaa3809cb220ef06b4d4ca17) with snippets from other first-time grant writers who received funding for their projects. If you have any questions, feel free to shoot an email to [alexa@kayman.ventures](mailto:alexa@kayman.ventures).
 
-## 6\. Interview Prep Resources
+##  Interview Prep Resources
 
 If you're selected for an interview, here's what to prepare:
 
@@ -116,7 +113,7 @@ If you're selected for an interview, here's what to prepare:
   - Previous projects and what you learned from them
 - Bring any prototypes or demos if available
 
-## 7\. Join Our Community
+## Join Our Community
 
 Join [LFG](https://airtable.com/appHaOk5VRk50CpcF/pagLXf1OzDFSnyykG/form) to get advice from people who've received the grant such as:
 
@@ -124,7 +121,7 @@ Join [LFG](https://airtable.com/appHaOk5VRk50CpcF/pagLXf1OzDFSnyykG/form) to get
 - [Sunir Kishan](https://www.linkedin.com/in/sunir-kishan-manandhar-5297b8237/), working on a Self Driving RC Car
 - [Aaryan Sing Kushwah](https://www.linkedin.com/in/aaryan-kushwah/), creating a monitoring system for senior citizens to prevent injury during sleep
 
-## 8\. Support Us
+## Support Us
 
 Want to help us make young people's dreams come true? [Become a donor](https://airtable.com/apppHgxMD5RiaGBXT/shr3eKopUMyv76BCP).
 

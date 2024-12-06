@@ -1,9 +1,9 @@
 ---
-title: Emergent Ventures
+title: Emergent Ventures Grant Program Guide
 issueNo: 1
 ---
 
-# **Quick Facts**
+## **Quick Facts**
 | |  |
 | --- | :--- |
 | **Type** | Non-dilutive grant (\$1,000-\$50,000) |

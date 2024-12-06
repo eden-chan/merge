@@ -3,16 +3,17 @@ title: Formidable Fellowship
 issueNo: 5
 ---
 
-# Formidable Fellowship
 
 ## Quick Facts
 
-- **Grant Amount:** $1,000
-- **Eligibility:** Middle and high school students in USA with active businesses
-- **Type:** No-strings-attached grant (no equity, debt, or obligations)
-- **Deadline:** February 21, 2025 (Winter cohort)
-- **Status:** 501(c)(3) non-profit
-- **Contact:** [info@formidablefellowship.org](mailto:info@formidablefellowship.org)
+| | |
+|---|---|
+| Grant Amount | $1,000 |
+| Eligibility | Middle and high school students in USA with active businesses |
+| Type | No-strings-attached grant (no equity, debt, or obligations) |
+| Deadline | February 21, 2025 (Winter cohort) |
+| Status | 501(c)(3) non-profit |
+| Contact | [info@formidablefellowship.org](mailto:info@formidablefellowship.org) |
 
 ## Mission
 
