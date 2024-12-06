@@ -8,7 +8,6 @@ function PageTitle({ fileData, cfg, displayClass }: QuartzComponentProps) {
   const baseDir = pathToRoot(fileData.slug!)
   const cardNumber = fileData.frontmatter?.issueNo ?? 1
 
-  console.log("cardNumber", cardNumber)
 
   const card = grants[fileData.slug as keyof typeof grants]
 

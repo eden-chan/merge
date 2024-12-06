@@ -16,7 +16,7 @@ export default (() => {
             relevant for you, and find the best tips for applications and interviews.
           </p>
           <a href="https://airtable.com/appHaOk5VRk50CpcF/pagLXf1OzDFSnyykG/form" class="cta-button">
-            Looking for Grants
+            Explore Microgrants
           </a>
         </div>
 
@@ -42,26 +42,28 @@ export default (() => {
               ))}
           </div>
           <div class="mission-section">
-            <h2 class="mission-title">Our Goal</h2>
+            <h2 class="mission-title">Why This Guide Matters</h2>
             <div class="mission-content">
-              <p>Our mission with this Microgrant Guide and Merge Club is to put more non-dilutive capital into the hands of ambitious young builders. To achieve this, we believe three key steps are essential: raising awareness, improving the quality and availability of information, and growing the number of existing microgrant programs.</p>
-              <p>The Microgrant Guide addresses the first two challenges. It helps you discover and apply to programs offering non-dilutive funding by raising awareness of alternative opportunities and providing a centralized hub for all microgrant and non-dilutive capital information.</p>
+              <p>The Microgrant Guide was created to democratize access to non-dilutive funding for ambitious young builders. Our comprehensive guide breaks down the complexities of microgrant programs, making them accessible and understandable for everyone.</p>
+              <p>Through extensive research and community feedback, this guide has become the go-to resource for understanding microgrant opportunities. We've compiled detailed information about application processes, eligibility criteria, and success stories to help you navigate the microgrant landscape effectively.</p>
+              <p>What sets our Microgrant Guide apart is its focus on practical, actionable advice. We don't just list opportunities—we provide strategic insights on how to craft compelling applications, prepare for interviews, and maximize your chances of securing funding.</p>
             </div>
           </div>
           <div class="benefits-section">
+            <h2>Guide Benefits</h2>
             <div class="benefit-card">
-              <h3>Be Ambitious Together</h3>
-              <p>Make friends working on a wide range of projects ranging from software startups to drones and non-invasive bioimaging.</p>
+              <h3>Expert Guidance</h3>
+              <p>Access curated microgrant opportunities and detailed application strategies from successful grant recipients and program administrators.</p>
             </div>
             
             <div class="benefit-card">
-              <h3>Give and Get Support</h3>
-              <p>Mergers help each other with feedback, knowledge, and introductions—then celebrate wins together.</p>
+              <h3>Community Support</h3>
+              <p>Connect with fellow grant seekers and recipients who share insights, provide feedback, and celebrate funding successes together.</p>
             </div>
             
             <div class="benefit-card">
-              <h3>Find Projects & Collaborators</h3>
-              <p>Discover what others are working on and how you can get involved.</p>
+              <h3>Resource Hub</h3>
+              <p>Find everything you need in one place: program deadlines, application templates, interview tips, and success stories from the microgrant community.</p>
             </div>
           </div>
         </div>   
