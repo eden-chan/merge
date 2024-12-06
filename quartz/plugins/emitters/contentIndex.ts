@@ -69,7 +69,9 @@ Allow: /guide/`
 function generateManifest(cfg: GlobalConfiguration): string {
   return JSON.stringify({
     name: "Merge Club",
-    short_name: "Merge Club", 
+    short_name: "Merge Club",
+    description: "Discover and apply for microgrants ranging from $100 to $100k. Find the perfect non-dilutive funding for your project with our comprehensive guide to grant programs, fellowships, and specialized funding opportunities.",
+    start_url: "/",
     icons: [
       {
         src: "/static/web-app-manifest-192x192.png",
@@ -82,11 +84,22 @@ function generateManifest(cfg: GlobalConfiguration): string {
         sizes: "512x512",
         type: "image/png",
         purpose: "maskable"
+      },
+      {
+        src: "/static/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+        purpose: "apple-touch-icon"
       }
     ],
     theme_color: "#ffffff",
     background_color: "#404A4B",
-    display: "standalone"
+    display: "standalone",
+    orientation: "portrait",
+    lang: "en",
+    dir: "ltr",
+    categories: ["education", "finance", "productivity"],
+    scope: "/"
   }, null, 2)
 }
 
