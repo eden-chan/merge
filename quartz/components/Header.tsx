@@ -1,7 +1,32 @@
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-function Header({ children }: QuartzComponentProps) {
-  return children.length > 0 ? <header>{children}</header> : null
+function Header({ children, fileData }: QuartzComponentProps) {
+  const metaDescription = "Discover and apply for microgrants ranging from $100 to $100k. Find the perfect non-dilutive funding for your project with our comprehensive guide to grant programs, fellowships, and specialized funding opportunities."
+  const isLandingPage = fileData?.slug === "index"
+  
+  return (
+    <>
+      <head>
+        <title>{isLandingPage ? "Merge Club - Microgrant Guide for Ambitious Builders" : fileData?.frontmatter?.title}</title>
+        <meta name="description" content={metaDescription} />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={isLandingPage ? "Merge Club - Microgrant Guide" : fileData?.frontmatter?.title} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/static/merge-logo.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={isLandingPage ? "Merge Club - Microgrant Guide" : fileData?.frontmatter?.title} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content="/static/merge-logo.png" />
+      </head>
+      
+      {children.length > 0 ? <header>{children}</header> : null}
+    </>
+  )
 }
 
 Header.css = `
