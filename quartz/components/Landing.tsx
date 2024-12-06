@@ -1,7 +1,7 @@
 import { QuartzComponentConstructor } from "./types"
 import landingStyle from "./styles/landing.scss"
 import { Card } from "./Card"
-import { cardsData } from "./data/cards"
+import { guides } from "./data/cards"
 
 export const TOTAL_CARDS = 4
 
@@ -22,7 +22,7 @@ export default (() => {
 
         <div class="content-container">
           <div class="issue-container">
-            {Object.entries(cardsData).map(([key, data], index) => (
+            {Object.entries(guides).map(([key, data], index) => (
               <Card
                 key={key}
                 title={data.title}
@@ -32,7 +32,7 @@ export default (() => {
                 href={data.href}
               />
             ))}
-            {Array(TOTAL_CARDS - Object.keys(cardsData).length)
+            {Array(TOTAL_CARDS - Object.keys(guides).length)
               .fill(0)
               .map((_, i) => (
                 <div key={`coming-${i}`} class="card card-coming">

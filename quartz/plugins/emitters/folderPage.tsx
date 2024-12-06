@@ -18,6 +18,7 @@ import {
 import { defaultListPageLayout, sharedPageComponents } from "../../../quartz.layout"
 import { FolderContent } from "../../components"
 
+
 export const FolderPage: QuartzEmitterPlugin<FullPageLayout> = (userOpts) => {
   const opts: FullPageLayout = {
     ...sharedPageComponents,
@@ -56,7 +57,7 @@ export const FolderPage: QuartzEmitterPlugin<FullPageLayout> = (userOpts) => {
           folder,
           defaultProcessedContent({
             slug: joinSegments(folder, "index") as FullSlug,
-            frontmatter: { title: `Folder: ${folder}`, tags: [] },
+            frontmatter: { title: `Folder: ${folder}`, tags: [], issueNo: folder.length },
           }),
         ]),
       )
@@ -68,10 +69,13 @@ export const FolderPage: QuartzEmitterPlugin<FullPageLayout> = (userOpts) => {
         }
       }
 
+    
+
       for (const folder of folders) {
         const slug = joinSegments(folder, "index") as FullSlug
         const externalResources = pageResources(pathToRoot(slug), resources)
         const [tree, file] = folderDescriptions[folder]
+        console.log("folder file", file.data.frontmatter?.issueNo ?? 0)
         const componentData: QuartzComponentProps = {
           fileData: file.data,
           externalResources,

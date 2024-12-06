@@ -1,10 +1,7 @@
 ---
-title: Merge Club
-issueNo: 1
+title: Merge Grants
+issueNo: 3
 ---
-
-
-
 
 **We provide a small amount of money and a large amount of encouragement.**
 
