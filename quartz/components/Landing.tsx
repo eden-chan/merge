@@ -10,7 +10,7 @@ export default (() => {
     return (
       <div>
         <div class="header-section">
-          <p class="landing-header">Microgrant Guide</p>
+          <h1 class="landing-header">Microgrant Guide</h1>
           <p class="page-subhead">
             Your one-stop-shop to learn about microgrant programs, figure out which ones are most
             relevant for you, and find the best tips for applications and interviews.

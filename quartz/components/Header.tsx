@@ -22,6 +22,10 @@ function Header({ children, fileData }: QuartzComponentProps) {
         <meta name="twitter:title" content={isLandingPage ? "Merge Club - Microgrant Guide" : fileData?.frontmatter?.title} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content="/static/merge-logo.png" />
+        
+        {/* Language */}
+        <meta httpEquiv="content-language" content="en" />
+        <html lang="en" />
       </head>
       
       {children.length > 0 ? <header>{children}</header> : null}
