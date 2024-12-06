@@ -20,9 +20,11 @@ function Header({ children, fileData }: QuartzComponentProps) {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={isLandingPage ? "Merge Club - Microgrant Guide" : fileData?.frontmatter?.title} />
-        <meta name="twitter:description" content={metaDescription} />
+        <meta property="twitter:description" content="Discover startup microgrants and fellowships. Your complete resource for finding funding opportunities and mastering the application process." />
         <meta name="twitter:image" content="/static/merge-logo.png" />
+        <meta property="twitter:url" content="https://merge.club/guide" />
         
+    
         {/* Language */}
         <meta httpEquiv="content-language" content="en" />
         <html lang="en" />
