@@ -65,6 +65,31 @@ Allow: /resources/
 Allow: /guide/`
 }
 
+
+function generateManifest(cfg: GlobalConfiguration): string {
+  return JSON.stringify({
+    name: "Merge Club",
+    short_name: "Merge Club", 
+    icons: [
+      {
+        src: "/static/web-app-manifest-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "maskable"
+      },
+      {
+        src: "/static/web-app-manifest-512x512.png", 
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable"
+      }
+    ],
+    theme_color: "#ffffff",
+    background_color: "#404A4B",
+    display: "standalone"
+  }, null, 2)
+}
+
 function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndex): string {
   const base = cfg.baseUrl ?? ""
   const createURLEntry = (slug: SimpleSlug, content: ContentDetails): string => `<url>
@@ -147,6 +172,13 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
             content: generateRobotsTxt(cfg),
             slug: "robots" as FullSlug,
             ext: ".txt",
+          }),
+        )
+        emitted.push(
+          await emit({
+            content: generateManifest(cfg),
+            slug: "site.webmanifest" as FullSlug,
+            ext: "",
           }),
         )
       }
