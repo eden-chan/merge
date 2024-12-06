@@ -126,26 +126,26 @@
 }
 
 .card-1 {
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   background-image: url("./static/1-noise.png");
   background-size: cover;
   overflow: visible;
 }
 
 .card-2 {
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   background-image: url("./static/2-noise.png");
   background-size: cover;
 }
 
 .card-3 {
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   background-image: url("./static/3-noise.png");
   background-size: cover;
 }
 
 .card-4 {
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   background-image: url("./static/4-noise.png");
   background-size: cover;
 }
@@ -284,9 +284,19 @@
 .benefit-card {
   flex: 1;
   padding: 1.5rem;
-  background: var(--bg);
   border: 1px solid var(--lightgray);
   border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  background-image: url("./static/1-noise.png");
+  background-size: cover;
+  
+  &:nth-child(2) {
+    background-image: url("./static/2-noise.png");
+  }
+  
+  &:nth-child(3) {
+    background-image: url("./static/3-noise.png");
+  }
   
   h3 {
     margin: 0 0 1rem;
