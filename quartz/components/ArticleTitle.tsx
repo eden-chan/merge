@@ -1,11 +1,11 @@
 import { pathToRoot } from "../util/path"
 import { Card } from "./Card"
-import { cardsData } from "./data/cards"
+import { guides } from "./data/cards"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 function ArticleTitle({ fileData, displayClass }: QuartzComponentProps) {
   const title = fileData.frontmatter?.title
-  const card = cardsData[fileData.slug as keyof typeof cardsData]
+  const card = guides[fileData.slug as keyof typeof guides]
   const baseDir = pathToRoot(fileData.slug!)
   if (title) {
     return (

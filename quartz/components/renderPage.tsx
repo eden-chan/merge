@@ -121,7 +121,7 @@ export function renderPage(
   const LandingComponent = Landing()
 
   const doc = (
-    <html>
+    <html lang="en-us">
       <Head {...componentData} />
       <body data-slug={slug}>
         <div class="marquee">

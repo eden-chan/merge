@@ -1,14 +1,12 @@
-import { QuartzComponentProps } from "./types"
-
-interface CardProps {
+export interface CardProps {
   title: string
   subhead?: string
   links?: Array<{
     url: string
     text: string
   }>
-  cardNumber: number
-  href: string
+  cardNumber?: number
+  href?: string
 }
 
 export function Card({ title, subhead, links, cardNumber, href }: CardProps) {
@@ -17,15 +15,17 @@ export function Card({ title, subhead, links, cardNumber, href }: CardProps) {
       <div className={`card card-${cardNumber}`}>
         <p className="card-title">{title}</p>
         <p className="card-subhead">{subhead}</p>
-        <ul className="unstyled-list">
-          {links?.map((link, index) => (
-            <li key={index}>
-              <a href={link.url} className="white-text">
-                {link.text}
-              </a>
-            </li>
-          ))}
-        </ul>
+        {links && (
+          <ul className="unstyled-list">
+            {links.map((link, index) => (
+              <li key={index}>
+                <a href={link.url} className="white-text">
+                  {link.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </a>
   )

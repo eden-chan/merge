@@ -20,6 +20,7 @@ function FolderContent(props: QuartzComponentProps) {
     return prefixed && isDirectChild
   })
 
+
   const listProps = {
     ...props,
     allFiles: allPagesInFolder,
