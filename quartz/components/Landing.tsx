@@ -50,7 +50,6 @@ export default (() => {
             </div>
           </div>
           <div class="benefits-section">
-            <h2>Guide Benefits</h2>
             <div class="benefit-card">
               <h3>Expert Guidance</h3>
               <p>Access curated microgrant opportunities and detailed application strategies from successful grant recipients and program administrators.</p>
