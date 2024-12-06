@@ -48,6 +48,22 @@ export default (() => {
               <p>The Microgrant Guide addresses the first two challenges. It helps you discover and apply to programs offering non-dilutive funding by raising awareness of alternative opportunities and providing a centralized hub for all microgrant and non-dilutive capital information.</p>
             </div>
           </div>
+          <div class="benefits-section">
+            <div class="benefit-card">
+              <h3>Be Ambitious Together</h3>
+              <p>Make friends working on a wide range of projects ranging from software startups to drones and non-invasive bioimaging.</p>
+            </div>
+            
+            <div class="benefit-card">
+              <h3>Give and Get Support</h3>
+              <p>Mergers help each other with feedback, knowledge, and introductions—then celebrate wins together.</p>
+            </div>
+            
+            <div class="benefit-card">
+              <h3>Find Projects & Collaborators</h3>
+              <p>Discover what others are working on and how you can get involved.</p>
+            </div>
+          </div>
         </div>   
 
        

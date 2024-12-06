@@ -268,3 +268,35 @@
     margin: 0;  // remove margin since it's the only element
   }
 }
+
+.benefits-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.benefit-card {
+  flex: 1;
+  padding: 1.5rem;
+  background: var(--bg);
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  
+  h3 {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    color: var(--dark);
+  }
+  
+  p {
+    margin: 0;
+    color: var(--gray);
+    line-height: 1.5;
+  }
+}

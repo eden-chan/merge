@@ -33,6 +33,37 @@ const defaultOptions: Options = {
   rssFullHtml: false,
   includeEmptyFiles: true,
 }
+// generate robots.txt
+function generateRobotsTxt(cfg: GlobalConfiguration): string {
+  const base = cfg.baseUrl ?? ""
+  return `User-agent: *
+Allow: /
+
+# Disallow crawling of sensitive paths
+Disallow: /private/
+Disallow: /admin/
+Disallow: /drafts/
+
+# Sitemaps
+Sitemap: https://${base}/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Disallow patterns
+Disallow: /api/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*?*
+
+# Allow specific paths
+Allow: /general/
+Allow: /fellowships/
+Allow: /specialized/
+Allow: /resources/
+Allow: /guide/`
+}
 
 function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndex): string {
   const base = cfg.baseUrl ?? ""
@@ -109,6 +140,13 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
             content: generateSiteMap(cfg, linkIndex),
             slug: "sitemap" as FullSlug,
             ext: ".xml",
+          }),
+        )
+        emitted.push(
+          await emit({
+            content: generateRobotsTxt(cfg),
+            slug: "robots" as FullSlug,
+            ext: ".txt",
           }),
         )
       }
